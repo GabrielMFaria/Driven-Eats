@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<title>Driven Eats</title>
+<link rel="stylesheet" href="reset.css" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="conteudo">
+  <div class="barra-topo">
+    <div class="driveneats">DrivenEats</div>
+    <div class="subtitulo">Sua comida em 6 minutos</div>
+  </div>
+  <div class="pagina">
+  <div class="primeiro">Primeiro, seu prato</div>
+  <div class="comidas">
+    <div class="frango"onclick="pedidoscomida(this)" >
+      <img src="pf_frango.jpg"/>
+      <h1>Frango Yin Yang</h1>
+      <p1>Um pouco de batata, um pouco de salada</p1>
+      <p2>14.90</p2>
+    </div>
+    <div class="carne"onclick="pedidoscomida(this)" >
+      <img src="pf_carne.jpg"/>
+      <h1>Carne e Ovo frito</h1>
+      <p1>Arroz,feijão,Salada e Fritas</p1>
+      <p2>14.50</p2>
+    </div>
+    <div class="calabresa"onclick="pedidoscomida(this)" >
+      <img src="pf_calabresa.png"/>
+      <h1>Calabresa acebolada</h1>
+      <p1>Arroz, feijão e polenta</p1>
+      <p2>13.25</p2>
+    </div>
+  </div>
+  <div class="agora">Agora, sua bebida</div>
+  <div class="bebidas">
+    <div class="coca"onclick="pedidosbebidas(this)">
+      <img src="coca.png"/>
+      <h1>Coquinha gelada</h1>
+      <p1>Lata 350ml</p1>
+      <p2>4.90</p2>
+    </div>
+    <div class="fanta"onclick="pedidosbebidas(this)" >
+      <img src="fanta.png"/>
+      <h1>Fanta gelada</h1>
+      <p1>Lata de 375ml</p1>
+      <p2>4.70</p2>
+    </div>
+    <div class="suco"onclick="pedidosbebidas(this)" >
+      <img src="suco.png"/>
+      <h1>Suco de Laranja</h1>
+      <p1>Natural</p1>
+      <p2>7.50</p2>
+    </div>
+  </div>
+  <div class="fim">Por fim, sua sobremessa</div>
+  <div class="sobremesa">
+    <div class="pudim"onclick="pedidossobremesa(this)"  >
+      <img src="pudim.jpg"/>
+      <h1>Pudim</h1>
+      <p1>Apenas Pudim</p1>
+      <p2>7.90</p2>
+    </div>
+    <div class="mouse"onclick="pedidossobremesa(this)" >
+      <img src="mouse.jpg"/>
+      <h1>Mouse</h1>
+      <p1>Delicioso</p1>
+      <p2>6.00</p2>
+    </div>
+    <div class="brownie" onclick="pedidossobremesa(this)" >
+      <img src="brownie.jpg"/>
+      <h1>Brownie</h1>
+      <p1>O mais pedido</p1>
+      <p2>7.00</p2>
+    </div>
+  </div>
+  </div>
+  <div class="barra-final">
+    <button class="selecionar" onclick="Finalizar()">Selecione os 3 itens para fechar o pedido</button> 
+  </div>
+  </div> 
+  <div class = "tela escondido">
+    <div class = "status">
+      <h1>Confirme seu Pedido</h1>
+      <p1></p1>
+      <p2></p2>
+      <p3></p3>
+      <p4></p4>
+      <a >Tudo certo, pode pedir!</a>
+      <button class="cancelar" onclick="cancelar()">Cancelar</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
